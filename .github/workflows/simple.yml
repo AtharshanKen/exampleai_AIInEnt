@@ -1,0 +1,26 @@
+name: Simple workflow to practice
+
+on: push
+
+jobs:
+  jobs1:
+    name: first job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step one of job1
+        uses: actions/checkout@v4
+
+      - name: Step two of job1
+        run: ls -la
+
+      - run: pwd
+  
+  jobs2:
+    name: second job to run
+    runs-on: windows-latest
+    steps:
+      - name: Step one of job2
+        uses: actions/checkout@v4
+      - name: Step two of job2
+        uses: pwd
