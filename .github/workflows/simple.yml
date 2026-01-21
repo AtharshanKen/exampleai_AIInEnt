@@ -23,4 +23,4 @@ jobs:
       - name: Step one of job2
         uses: actions/checkout@v4
       - name: Step two of job2
-        uses: pwd
+        run: pwd
